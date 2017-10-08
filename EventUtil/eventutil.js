@@ -74,5 +74,22 @@ var EventUtil = {
                     return 1;
             }
         }
+    },
+    //获取鼠标滚轮滑动信息(+120:向前滑动基数,-120:向后滑动基数)
+    getWheelDelta: function(event) {
+        if (event.wheelDelta) {
+            // return (client.engine.opera && client.engine.opera < 9.5 ? -event.wheelDelta : event.wheelDelta);
+            return event.wheelDelta;
+        } else {
+            return -event.detail * 40;
+        }
+    },
+    //获取键码
+    getCharCode: function(event) {
+        if (typeof event.charCode === 'number') {
+            return event.charCode;
+        } else {
+            return event.keyCode;
+        }
     }
 };
