@@ -1,0 +1,25 @@
+{
+	"Print to console": {
+			"prefix": "vue",
+			"body": [
+					"<template>",
+					"",
+					"</template>\n",
+					"<script type=\"text/ecmascript-6\">",
+					"export default {",
+					"  data() {",
+					"    return {\n",
+					"    }",
+					"  },",
+					"  components: {\n",
+					"  }",
+					"};",
+					"</script>\n",
+					"<style lang=\"stylus\" rel=\"stylesheet/stylus\">",
+					"",
+					"</style>",
+					"$2"
+			],
+			"description": "Log output to console"
+	}
+}
